@@ -16,6 +16,8 @@ const Header = () => {
             <Image
               src="images/logo.svg"
               alt={`${APP_NAME} Logo`}
+              width={48}
+              height={48}
               className="h-10 w-10 rounded-full"
             />
             <span>{APP_NAME}</span>
