@@ -25,3 +25,7 @@ export const getAllCategories = () => {
     new Set(sampleData.products.map((product) => product.category))
   );
 };
+
+// export const getAllProducts = () =>{
+
+// }
