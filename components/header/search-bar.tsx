@@ -7,13 +7,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { categories } from "@/lib/constants";
+import { getAllCategories } from "@/lib/utils";
+
 // import { getAllCategories } from '@/lib/actions/product.actions';
 import { SearchIcon } from "lucide-react";
 
-
 const Search = async () => {
-  //   const categories = await getAllCategories();
+  const categories = await getAllCategories();
 
   return (
     <form action="/search" method="GET">

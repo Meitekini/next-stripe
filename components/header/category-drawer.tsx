@@ -9,9 +9,10 @@ import {
 } from "../ui/drawer";
 import { Button } from "../ui/button";
 import { Link, MenuIcon } from "lucide-react";
-import { categories } from "@/lib/constants";
+import { getAllCategories } from "@/lib/utils";
 
-const CategoryDrawer = () => {
+const CategoryDrawer = async () => {
+  const categories = getAllCategories();
   return (
     <Drawer>
       <DrawerTrigger asChild>
@@ -28,12 +29,13 @@ const CategoryDrawer = () => {
             {categories.map((category, index) => (
               <Button variant="ghost" key={index} className="w-full">
                 {category}
-              <DrawerClose asChild>
-                <Link href={`/search?category=${category.toLowerCase()}`}>
-                  <span className="sr-only">Go to {category}</span>
-                </Link>
-              </DrawerClose>
-              </Button>))}
+                <DrawerClose asChild>
+                  <Link href={`/search?category=${category.toLowerCase()}`}>
+                    <span className="sr-only">Go to {category}</span>
+                  </Link>
+                </DrawerClose>
+              </Button>
+            ))}
           </div>
         </DrawerHeader>
       </DrawerContent>
