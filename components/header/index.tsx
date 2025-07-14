@@ -4,13 +4,14 @@ import Link from "next/link";
 import React from "react";
 import Search from "./search-bar";
 import Menu from "./menu";
+import CategoryDrawer from "./category-drawer";
 
 const Header = () => {
   return (
     <header className="w-full border-b border-gray-700">
       <div className="wrapper flex-between">
         <div className="flex-start">
-          {/* <CategoryDrawer/> */}
+          <CategoryDrawer />
           <Link href="/" className="flex-start ml-4">
             <Image
               src="images/logo.svg"
