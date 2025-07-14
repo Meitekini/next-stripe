@@ -125,4 +125,26 @@
   .wrapper {
     @apply max-w-7xl lg:mx-auto p-5 md:px-10 w-full;
   }
+  .flex-start {
+    @apply flex items-center justify-start;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-end {
+    @apply flex items-center justify-end;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .h1-bold {
+    @apply text-2xl font-bold tracking-tight lg:text-3xl;
+  }
+
+  .h2-bold {
+    @apply text-xl font-bold tracking-tight lg:text-3xl;
+  }
+  .h3-bold {
+    @apply text-lg font-bold tracking-tight lg:text-2xl;
+  }
 }

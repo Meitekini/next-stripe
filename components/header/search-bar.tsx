@@ -7,30 +7,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { categories } from "@/lib/constants";
 // import { getAllCategories } from '@/lib/actions/product.actions';
 import { SearchIcon } from "lucide-react";
-const categories = [
-  "Electronics",
-  "Fashion",
-  "Home & Kitchen",
-  "Health & Beauty",
-  "Sports & Outdoors",
-  "Toys & Games",
-  "Books & Media",
-  "Automotive",
-  "Groceries & Gourmet Food",
-  "Office Supplies",
-  "Jewelry & Accessories",
-  "Baby Products",
-  "Pet Supplies",
-  "Tools & Home Improvement",
-  "Musical Instruments",
-  "Arts & Crafts",
-  "Garden & Outdoor",
-  "Footwear",
-  "Watches",
-  "Luggage & Travel Gear",
-];
+
 
 const Search = async () => {
   //   const categories = await getAllCategories();
